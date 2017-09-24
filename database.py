@@ -1,22 +1,26 @@
 #!/usr/bin/env python
 
+import networkx as nx
+
 from neo4j.v1 import GraphDatabase, basic_auth
 
 driver = GraphDatabase.driver("bolt://localhost:7687", auth=basic_auth("neo4j", "199402"))
 session = driver.session()
 
-if session.run("MATCH (a:Person) WHERE a.name = {name} "
+'''if session.run("MATCH (a:Site) WHERE a.name = {name} "
                 "RETURN a.name AS name, a.title AS title",
-                {"name": "Lancelot"}):
+                {"name": "Nulladik"}):
     print('Már létezik')
-else:
-    session.run("CREATE (a:Person {name: {name}, title: {title}})",
-                {"name": "Lancelot", "title": "King"})
+else:'''
+session.run("CREATE (a:Site {name: {name}, title: {title}})",
+            {"name": "Első", "title": "Első oldal"})
 
-result = session.run("MATCH (a:Person) WHERE a.name = {name} "
+result = session.run("MATCH (a:Site) WHERE a.name = {name} "
                      "RETURN a.name AS name, a.title AS title",
-                     {"name": "Arthur"})
+                     {"name": "Nulladik"})
+print(result)
 for record in result:
     print("%s %s" % (record["title"], record["name"]))
+
 
 session.close()

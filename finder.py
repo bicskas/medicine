@@ -2,6 +2,7 @@
 
 import requests
 from bs4 import BeautifulSoup
+import network
 
 
 def getParse(baseurl):
@@ -30,6 +31,8 @@ def getURL(page):
 def kiir(sublinks):
     for i in range(len(sublinks)):
         print(sublinks[i])
+        network.elment(sublinks[i])
+        network.addBase(baseurl,sublinks[i])
 
 
 def getSubLink(page):
@@ -44,6 +47,9 @@ def getSubLink(page):
     return sublinks
 
 
-baseurl = "http://kurzushalo.dev"
+baseurl = "http://ferling.hu"
 page = getParse(baseurl)
+network.deleteAll()
+network.elment(baseurl)
 kiir(getSubLink(page))
+
