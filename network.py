@@ -1,6 +1,7 @@
 from py2neo import Graph, Node, Relationship
 import py2neo
 from py2neo.ogm import GraphObject, Property, RelatedTo, RelatedObjects
+import env
 
 
 class Site(GraphObject):
@@ -13,12 +14,12 @@ class Site(GraphObject):
 
 
 def deleteAll():
-    graph = Graph(password="199402")
+    graph = Graph(password=env.DB_PASSWORD)
     graph.delete_all()
 
 
 def elment(site):
-    graph = Graph(password="199402")
+    graph = Graph(password=env.DB_PASSWORD)
 
     newSite = Site()
     newSite.name = site
@@ -26,8 +27,8 @@ def elment(site):
     graph.push(newSite)
 
 
-def addBase(base, site):
-    graph = Graph(password="199402")
+def addToBase(base, site):
+    graph = Graph(password=env.DB_PASSWORD)
 
     basesite = Site.select(graph, base).first()
     basesite = basesite.__ogm__.node

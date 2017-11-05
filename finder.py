@@ -1,10 +1,13 @@
 #!/usr/bin/env python
+from random import randint
 
 import requests
 from bs4 import BeautifulSoup
 import network
+import env
 
 
+# az adott oldal html részét adja vissza
 def getParse(baseurl):
     url = baseurl
     response = requests.get(url)
@@ -13,6 +16,7 @@ def getParse(baseurl):
     return parse
 
 
+# az adott oldalon található linkek
 def getURL(page):
     """
 
@@ -28,13 +32,7 @@ def getURL(page):
     return url, end_quote
 
 
-def kiir(sublinks):
-    for i in range(len(sublinks)):
-        print(sublinks[i])
-        network.elment(sublinks[i])
-        network.addBase(baseurl,sublinks[i])
-
-
+# a getUrl alapján készít egy tömböt a linkekből
 def getSubLink(page):
     sublinks = []
     while True:
@@ -47,10 +45,16 @@ def getSubLink(page):
     return sublinks
 
 
-baseurl = "http://pte.hu"
+def kiir(sublinks):
+    for i in range(len(sublinks)):
+        print(sublinks[i])
+        network.elment(sublinks[i])
+        network.addToBase(baseurl, sublinks[i])
+
+
+baseurl = "http://ferling.hu"
 visited = []
 page = getParse(baseurl)
 network.deleteAll()
 network.elment(baseurl)
 kiir(getSubLink(page))
-
