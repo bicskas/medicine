@@ -1,0 +1,5 @@
+beautifulsoup4
+requests
+neo4j-embedded
+networkx
+py2neo
