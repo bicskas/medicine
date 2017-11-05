@@ -47,7 +47,8 @@ def getSubLink(page):
     return sublinks
 
 
-baseurl = "http://ferling.hu"
+baseurl = "http://pte.hu"
+visited = []
 page = getParse(baseurl)
 network.deleteAll()
 network.elment(baseurl)
