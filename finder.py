@@ -9,8 +9,6 @@ from urllib.parse import urljoin
 import env
 import re
 
-
-
 global visited
 visited = []
 
@@ -23,17 +21,22 @@ def setBaseUrl(url):
     baseurl = url
 
 
+def setQeueRange(melyeg):
+    for num in range(0, melyseg):
+        queue.append([])
+
+
 def addToVisited(url):
     visited.append(url)
 
 
-def addToQueue(url):
+def addToQueue(szint, url):
     if not url in queue and not url in visited:
-        queue.append(url)
+        queue[szint].append(url)
 
 
-def removeFromQueue(url):
-    queue.remove(url)
+def removeFromQueue(szint, url):
+    queue[szint].remove(url)
 
 
 # az adott oldal html részét adja vissza
@@ -65,11 +68,11 @@ def getURL(page):
         if not link.get('href') is None and not link.get('href').startswith('#') and link.get(
                 'href') != baseurl:
             t_links.append(urljoin(baseurl, link.get('href')))
-
+    szint = 0
     for l in t_links:
         if l.startswith('http') and not l in visited:
             links.append(l)
-            addToQueue(l)
+            addToQueue(szint, l)
 
     return links
 
@@ -95,20 +98,28 @@ def kiir(sublinks):
         network.addToBase(baseurl, sublinks[i])
 
 
-starturl = "http://pte.hu"
+starturl = "http://ferling.hu"
+melyseg = 5
+
+setQeueRange(melyseg)
 setBaseUrl(starturl)
 page = getParse(baseurl)
 getURL(page)
 network.deleteAll()
 network.elment(baseurl)
 kiir(getURL(page))
-print('ELSŐ RÉSZ')
+print('ELSŐ RÉSZ:', visited)
+removeFromQueue(0, baseurl)
+i = 0
 
-for q in queue:
-    if not q in visited:
-        print(q)
-        setBaseUrl(q)
-        removeFromQueue(q)
-        page = getParse(baseurl)
-        getURL(page)
-        kiir(getURL(page))
+'''
+while i < melyseg:
+    for q in queue:
+        if not q in visited:
+            setBaseUrl(q)
+            removeFromQueue(q)
+            page = getParse(baseurl)
+            getURL(page)
+            kiir(getURL(page))
+    i = i +1
+'''
