@@ -55,10 +55,6 @@ def getParse(baseurl):
     url = baseurl
     addToVisited(url)
     html_page = urllib.request.urlopen(url)
-    try:
-        pass
-    except ValueError:
-        print()
     # parse html
     parse = BeautifulSoup(html_page, 'lxml')
     return parse
@@ -83,7 +79,7 @@ def getURL(page):
     szint = getSzint(level, baseurl) + 1
 
     for l in t_links:
-        if l.startswith('http') and not l in visited and not l in queue[szint]:
+        if l.startswith('http') and not l in visited:
             links.append(l)
             addToQueue(szint, l)
 
@@ -104,15 +100,14 @@ def getURL(page):
 
 
 def kiir(sublinks):
-    # print(baseurl)
     for i in range(len(sublinks)):
         # print(sublinks[i])
         network.elment(sublinks[i])
         network.addToBase(baseurl, sublinks[i])
 
 
-starturl = "http://oae.kgergo.fwl.hu"
-melyseg = 5
+starturl = "http://www.baranya.hu"
+melyseg = 3
 setQeueRange(melyseg)
 setBaseUrl(starturl)
 addToQueue(0, baseurl)
@@ -124,12 +119,21 @@ removeFromQueue(0, baseurl)
 kiir(getURL(page))
 # print('ELSŐ RÉSZ:', visited)
 i = 0
-print(level)
 while i < melyseg:
+    print('Melység', i, queue[i])
     for q in queue[i]:
+        print(q)
         if not q in visited:
             setBaseUrl(q)
             removeFromQueue(getSzint(level, q), q)
-            page = getParse(baseurl)
-            kiir(getURL(page))
+            try:
+                page = getParse(baseurl)
+                print(baseurl, 'megnyitva')
+                kiir(getURL(page))
+            except:
+                print('Hiba')
+                # break
+
     i = i + 1
+
+print(visited)
