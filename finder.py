@@ -6,8 +6,7 @@ from bs4 import BeautifulSoup
 import network
 import urllib.request
 from urllib.parse import urljoin
-import env
-import re
+from urllib.parse import urlparse
 
 global visited
 visited = []
@@ -48,6 +47,10 @@ def getSzint(myList, v):
     for szint, x in enumerate(myList):
         if v in x:
             return (szint)
+
+
+def getName(name):
+    return str(urlparse(name).netloc).replace('www.', '')
 
 
 # az adott oldal html részét adja vissza
@@ -102,27 +105,27 @@ def getURL(page):
 def kiir(sublinks):
     for i in range(len(sublinks)):
         # print(sublinks[i])
-        network.elment(sublinks[i])
-        network.addToBase(baseurl, sublinks[i])
+        path = urlparse(sublinks[i]).scheme + '://' + urlparse(sublinks[i]).netloc
+        if (path != baseurl):
+            network.elment(getName(sublinks[i]))
+            network.addToBase(getName(baseurl), getName(sublinks[i]))
 
 
 starturl = "http://www.baranya.hu"
-melyseg = 3
+melyseg = 4
 setQeueRange(melyseg)
 setBaseUrl(starturl)
 addToQueue(0, baseurl)
 page = getParse(baseurl)
 # getURL(page)
 network.deleteAll()
-network.elment(baseurl)
+network.elment(getName(baseurl))
 removeFromQueue(0, baseurl)
 kiir(getURL(page))
 # print('ELSŐ RÉSZ:', visited)
 i = 0
 while i < melyseg:
-    print('Melység', i, queue[i])
     for q in queue[i]:
-        print(q)
         if not q in visited:
             setBaseUrl(q)
             removeFromQueue(getSzint(level, q), q)
@@ -131,9 +134,9 @@ while i < melyseg:
                 print(baseurl, 'megnyitva')
                 kiir(getURL(page))
             except:
-                print('Hiba')
+                print('Hiba a megnyitáskor: ' + q)
                 # break
 
-    i = i + 1
+    i += 1
 
 print(visited)
