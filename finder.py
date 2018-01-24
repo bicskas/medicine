@@ -104,30 +104,37 @@ def getURL(page):
 
 def kiir(sublinks):
     for i in range(len(sublinks)):
-        # print(sublinks[i])
         path = urlparse(sublinks[i]).scheme + '://' + urlparse(sublinks[i]).netloc
         if (path != baseurl):
             network.elment(getName(sublinks[i]))
             network.addToBase(getName(baseurl), getName(sublinks[i]))
+        elif (path == baseurl):
+            network.addSize()
 
 
-starturl = "http://www.baranya.hu"
+# -----------------------------------------------------------------------------
+starturl = "http://www.pte.hu"
 melyseg = 4
+
 setQeueRange(melyseg)
 setBaseUrl(starturl)
 addToQueue(0, baseurl)
+
 page = getParse(baseurl)
-# getURL(page)
+
+network.graphOpen()
 network.deleteAll()
 network.elment(getName(baseurl))
+network.setBaseNode(getName(baseurl))
 removeFromQueue(0, baseurl)
 kiir(getURL(page))
-# print('ELSŐ RÉSZ:', visited)
+
 i = 0
 while i < melyseg:
     for q in queue[i]:
         if not q in visited:
             setBaseUrl(q)
+            network.setBaseNode(getName(q))
             removeFromQueue(getSzint(level, q), q)
             try:
                 page = getParse(baseurl)

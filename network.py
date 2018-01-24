@@ -13,14 +13,21 @@ class Site(GraphObject):
     link = RelatedTo('Site')
 
 
-def deleteAll():
+def graphOpen():
+    global graph
     graph = Graph(password=env.DB_PASSWORD)
+
+
+def setBaseNode(base):
+    global basenode
+    basenode = Site.select(graph, base).first()
+
+
+def deleteAll():
     graph.delete_all()
 
 
 def elment(site):
-    graph = Graph(password=env.DB_PASSWORD)
-
     newSite = Site()
     newSite.name = site
     newSite.size = 1
@@ -28,10 +35,14 @@ def elment(site):
 
 
 def addToBase(base, site):
-    graph = Graph(password=env.DB_PASSWORD)
-
     basesite = Site.select(graph, base).first()
     basesite = basesite.__ogm__.node
     newsite = Site.select(graph, site).first()
     newsite = newsite.__ogm__.node
     graph.create(Relationship(basesite, 'LINK', newsite))
+
+
+def addSize():
+    basenode.size += 1
+    print(basenode.name, basenode.size)
+    graph.push(basenode)
