@@ -1,26 +1,56 @@
-#!/usr/bin/env python
-
-import networkx as nx
-
-from neo4j.v1 import GraphDatabase, basic_auth
-
-driver = GraphDatabase.driver("bolt://localhost:7687", auth=basic_auth("neo4j", "199402"))
-session = driver.session()
-
-'''if session.run("MATCH (a:Site) WHERE a.name = {name} "
-                "RETURN a.name AS name, a.title AS title",
-                {"name": "Nulladik"}):
-    print('Már létezik')
-else:'''
-session.run("CREATE (a:Site {name: {name}, title: {title}})",
-            {"name": "Első", "title": "Első oldal"})
-
-result = session.run("MATCH (a:Site) WHERE a.name = {name} "
-                     "RETURN a.name AS name, a.title AS title",
-                     {"name": "Nulladik"})
-print(result)
-for record in result:
-    print("%s %s" % (record["title"], record["name"]))
+from py2neo import Graph, Node, Relationship
+import py2neo
+from py2neo.ogm import GraphObject, Property, RelatedTo, RelatedObjects
+import env
 
 
-session.close()
+class Site(GraphObject):
+    __primarykey__ = 'name'
+
+    name = Property()
+    size = Property()
+
+    link = RelatedTo('Site', 'Link')
+
+
+def graphOpen():
+    global graph
+    graph = Graph(password=env.DB_PASSWORD)
+
+
+def setBaseNode(base):
+    global basenode
+    basenode = Site.select(graph, base).first()
+
+
+def deleteAll():
+    graph.delete_all()
+
+
+def elment(site):
+    newSite = Site()
+    newSite.name = site
+    newSite.size = 1
+    graph.push(newSite)
+
+
+def addToBase(base, site):
+    basesite = Site.select(graph, base).first()
+    basesite = basesite.__ogm__.node
+    newsite = Site.select(graph, site).first()
+    newsite = newsite.__ogm__.node
+    graph.create(Relationship(basesite, 'LINK', newsite))
+
+
+def addSize():
+    basenode.size += 1
+    print(basenode.name, basenode.size)
+    graph.push(basenode)
+
+def getNodes():
+    nodes = graph.data("MATCH (a:Site) RETURN a.name ")
+    return nodes
+
+def getEdges():
+    edges = graph.data("MATCH (s:Site)-[r:LINK]->(n:Site) RETURN s.name, n.name")
+    return edges

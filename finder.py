@@ -3,7 +3,7 @@ from random import randint
 
 import requests
 from bs4 import BeautifulSoup
-import network
+import database
 import urllib.request
 from urllib.parse import urljoin
 from urllib.parse import urlparse
@@ -106,14 +106,14 @@ def kiir(sublinks):
     for i in range(len(sublinks)):
         path = urlparse(sublinks[i]).scheme + '://' + urlparse(sublinks[i]).netloc
         if (path != baseurl):
-            network.elment(getName(sublinks[i]))
-            network.addToBase(getName(baseurl), getName(sublinks[i]))
+            database.elment(getName(sublinks[i]))
+            database.addToBase(getName(baseurl), getName(sublinks[i]))
         elif (path == baseurl):
-            network.addSize()
+            database.addSize()
 
 
 # -----------------------------------------------------------------------------
-starturl = "http://www.pte.hu"
+starturl = "http://reductilrendeles.com/"
 melyseg = 4
 
 setQeueRange(melyseg)
@@ -122,10 +122,10 @@ addToQueue(0, baseurl)
 
 page = getParse(baseurl)
 
-network.graphOpen()
-network.deleteAll()
-network.elment(getName(baseurl))
-network.setBaseNode(getName(baseurl))
+database.graphOpen()
+database.deleteAll()
+database.elment(getName(baseurl))
+database.setBaseNode(getName(baseurl))
 removeFromQueue(0, baseurl)
 kiir(getURL(page))
 
@@ -134,7 +134,7 @@ while i < melyseg:
     for q in queue[i]:
         if not q in visited:
             setBaseUrl(q)
-            network.setBaseNode(getName(q))
+            database.setBaseNode(getName(q))
             removeFromQueue(getSzint(level, q), q)
             try:
                 page = getParse(baseurl)
