@@ -20,7 +20,11 @@ def graphOpen():
 
 def setBaseNode(base):
     global basenode
-    basenode = Site.select(graph, base).first()
+    # basenode = Site.select(graph, base).first()
+    site = Site()
+    site.name = base
+    graph.merge(site)
+    basenode = site
 
 
 def deleteAll():
@@ -30,8 +34,12 @@ def deleteAll():
 def elment(site):
     newSite = Site()
     newSite.name = site
-    newSite.size = 1
-    graph.push(newSite)
+    # newSite.size = 1
+    # graph.push(newSite)
+    graph.merge(newSite)
+    if newSite.size is None:
+        newSite.size = 1
+        graph.push(newSite)
 
 
 def addToBase(base, site):
@@ -43,13 +51,17 @@ def addToBase(base, site):
 
 
 def addSize():
-    basenode.size += 1
-    print(basenode.name, basenode.size)
-    graph.push(basenode)
+    node = basenode
+    size = basenode.size
+    graph.merge(node)
+    node.size = size + 1
+    graph.push(node)
+
 
 def getNodes():
     nodes = graph.data("MATCH (a:Site) RETURN a.name ")
     return nodes
+
 
 def getEdges():
     edges = graph.data("MATCH (s:Site)-[r:LINK]->(n:Site) RETURN s.name, n.name")

@@ -113,37 +113,41 @@ def kiir(sublinks):
 
 
 # -----------------------------------------------------------------------------
-starturl = "http://reductilrendeles.com/"
+starturls = ["http://reductilrendeles.com/", "https://www.viagrapatika.com/", "http://viagra-rendeles.net/",
+             "http://fogyasztoszer.com/", "http://koksz.info", "http://www.ivancsapatika.hu/",
+             "https://pingvinpatika.hu/", "https://www.sipo.hu/"]
+
 melyseg = 4
-
-setQeueRange(melyseg)
-setBaseUrl(starturl)
-addToQueue(0, baseurl)
-
-page = getParse(baseurl)
-
 database.graphOpen()
 database.deleteAll()
-database.elment(getName(baseurl))
-database.setBaseNode(getName(baseurl))
-removeFromQueue(0, baseurl)
-kiir(getURL(page))
+
+setQeueRange(melyseg)
+# setBaseUrl(starturl)
+
+for url in starturls:
+    addToQueue(0, url)
+
+    # page = getParse(baseurl)
+    # database.elment(getName(baseurl))
+    # database.setBaseNode(getName(baseurl))
+    # removeFromQueue(0, baseurl)
+    # kiir(getURL(page))
 
 i = 0
 while i < melyseg:
+    print(queue[i])
     for q in queue[i]:
+        print('----------------------------------------\nLátogatott:',visited,'\ntömb:',queue[i],'\nadott:',q)
         if not q in visited:
             setBaseUrl(q)
             database.setBaseNode(getName(q))
-            removeFromQueue(getSzint(level, q), q)
+            # removeFromQueue(getSzint(level, q), q)
             try:
                 page = getParse(baseurl)
-                print(baseurl, 'megnyitva')
+                # print(baseurl, 'megnyitva')
                 kiir(getURL(page))
             except:
-                print('Hiba a megnyitáskor: ' + q)
+                print('' + q)
                 # break
-
     i += 1
-
-print(visited)
+    print('szintlépés',queue[i])

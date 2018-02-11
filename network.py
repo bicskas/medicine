@@ -17,11 +17,11 @@ for e in edges:
     G.add_edge(e['s.name'], e['n.name'])
 
 #gráf kirajzolása
-# nx.draw(G, node_size=12, alpha=0.8,with_labels=True, font_weight='normal',font_size='8', font_color='brown',node_color='cyan',edge_color='gray')
+nx.draw(G, node_size=12, alpha=0.8,with_labels=False, font_weight='normal',font_size='8', font_color='brown',node_color='cyan',edge_color='gray')
 # plt.show(dpi=2000)
-# # plt.savefig("test.png",dpi=2000)
-# # sorted(d for n, d in G.degree())
-# print(G.number_of_edges())
+plt.savefig("test.png",dpi=2000)
+# sorted(d for n, d in G.degree())
+print(G.number_of_edges())
 
 
 #------------------------------------eloszlás kirajzolása a ábrával együtt------------------------------------
@@ -48,26 +48,26 @@ for e in edges:
 # # plt.savefig("test.png",dpi=2000)
 
 #---------------------------histogram------------------------------------------------
-degree_sequence = sorted([d for n, d in G.degree()], reverse=True)  # degree sequence
-# print "Degree sequence", degree_sequence
-degreeCount = collections.Counter(degree_sequence)
-deg, cnt = zip(*degreeCount.items())
-
-fig, ax = plt.subplots()
-plt.bar(deg, cnt, width=0.80, color='b')
-
-plt.title("Degree Histogram")
-plt.ylabel("Count")
-plt.xlabel("Degree")
-ax.set_xticks([d + 0.4 for d in deg])
-ax.set_xticklabels(deg)
-
-# draw graph in inset
-plt.axes([0.4, 0.4, 0.5, 0.5])
-Gcc = sorted(nx.connected_component_subgraphs(G), key=len, reverse=True)[0]
-pos = nx.spring_layout(G)
-plt.axis('off')
-nx.draw_networkx_nodes(G, pos, node_size=20)
-nx.draw_networkx_edges(G, pos, alpha=0.4)
-
-plt.show()
+# degree_sequence = sorted([d for n, d in G.degree()], reverse=True)  # degree sequence
+# # print "Degree sequence", degree_sequence
+# degreeCount = collections.Counter(degree_sequence)
+# deg, cnt = zip(*degreeCount.items())
+#
+# fig, ax = plt.subplots()
+# plt.bar(deg, cnt, width=0.80, color='b')
+#
+# plt.title("Degree Histogram")
+# plt.ylabel("Count")
+# plt.xlabel("Degree")
+# ax.set_xticks([d + 0.4 for d in deg])
+# ax.set_xticklabels(deg)
+#
+# # draw graph in inset
+# plt.axes([0.4, 0.4, 0.5, 0.5])
+# Gcc = sorted(nx.connected_component_subgraphs(G), key=len, reverse=True)[0]
+# pos = nx.spring_layout(G)
+# plt.axis('off')
+# nx.draw_networkx_nodes(G, pos, node_size=20)
+# nx.draw_networkx_edges(G, pos, alpha=0.4)
+#
+# plt.show()
