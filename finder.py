@@ -119,7 +119,7 @@ starturls = ["http://reductilrendeles.com/", "https://www.viagrapatika.com/", "h
 
 melyseg = 4
 database.graphOpen()
-database.deleteAll()
+# database.deleteAll()
 
 setQeueRange(melyseg)
 # setBaseUrl(starturl)
