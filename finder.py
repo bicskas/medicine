@@ -113,9 +113,9 @@ def kiir(sublinks):
 
 
 # -----------------------------------------------------------------------------
-starturls = ["http://reductilrendeles.com/", "https://www.viagrapatika.com/", "http://viagra-rendeles.net/",
-             "http://fogyasztoszer.com/", "http://koksz.info", "http://www.ivancsapatika.hu/",
-             "https://pingvinpatika.hu/", "https://www.sipo.hu/"]
+starturls = {"http://reductilrendeles.com/" : "illegal", "https://www.viagrapatika.com/" : "legal", "http://viagra-rendeles.net/",
+             "http://fogyasztoszer.com/" : "illegal", "http://koksz.info"  : "illegal", "http://www.ivancsapatika.hu/" : "illegal",
+             "http://pingvinpatika.hu/" : "illegal", "http://www.sipo.hu/" : "illegal"}
 
 melyseg = 4
 database.graphOpen()
@@ -124,20 +124,19 @@ database.graphOpen()
 setQeueRange(melyseg)
 # setBaseUrl(starturl)
 
-for url in starturls:
+for url,type in starturls:
     addToQueue(0, url)
-
-    # page = getParse(baseurl)
-    # database.elment(getName(baseurl))
-    # database.setBaseNode(getName(baseurl))
+    setBaseUrl(url)
+    page = getParse(baseurl)
+    database.elment(getName(baseurl))
+    database.setBaseNode(getName(baseurl))
     # removeFromQueue(0, baseurl)
-    # kiir(getURL(page))
+    kiir(getURL(page))
 
-i = 0
+i = 1
 while i < melyseg:
-    print(queue[i])
     for q in queue[i]:
-        print('----------------------------------------\nLátogatott:',visited,'\ntömb:',queue[i],'\nadott:',q)
+        #print('----------------------------------------\nLátogatott:',visited,'\ntömb:',queue[i],'\nadott:',q)
         if not q in visited:
             setBaseUrl(q)
             database.setBaseNode(getName(q))
@@ -150,4 +149,3 @@ while i < melyseg:
                 print('' + q)
                 # break
     i += 1
-    print('szintlépés',queue[i])
