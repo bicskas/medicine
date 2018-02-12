@@ -9,6 +9,7 @@ class Site(GraphObject):
 
     name = Property()
     size = Property()
+    ntype = Property()
 
     link = RelatedTo('Site', 'Link')
 
@@ -20,11 +21,11 @@ def graphOpen():
 
 def setBaseNode(base):
     global basenode
-    # basenode = Site.select(graph, base).first()
-    site = Site()
-    site.name = base
-    graph.merge(site)
-    basenode = site
+    basenode = base
+    #site = Site()
+    #site.name = base
+    #site = graph.merge(site,'name')
+    #print(site,basenode)
 
 
 def deleteAll():
@@ -34,9 +35,10 @@ def deleteAll():
 def elment(site):
     newSite = Site()
     newSite.name = site
+    newSite.ntype = "undefined"
     # newSite.size = 1
     # graph.push(newSite)
-    graph.merge(newSite)
+    graph.merge(newSite, "name",newSite.name)
     if newSite.size is None:
         newSite.size = 1
         graph.push(newSite)
@@ -51,18 +53,19 @@ def addToBase(base, site):
 
 
 def addSize():
-    node = basenode
-    size = basenode.size
-    graph.merge(node)
-    node.size = size + 1
-    graph.push(node)
+    #node = basenode
+    #size = basenode.size
+    #graph.merge(node)
+    #node.size = size + 1
+    #graph.push(node)
+    a = 12
 
 
 def getNodes():
-    nodes = graph.data("MATCH (a:Site) RETURN a.name ")
+    nodes = graph.data("MATCH (a:Site) WHERE EXISTS(a.ntype) RETURN a.name, a.ntype")
     return nodes
 
 
 def getEdges():
-    edges = graph.data("MATCH (s:Site)-[r:LINK]->(n:Site) RETURN s.name, n.name")
+    edges = graph.data("MATCH (s:Site)-[r:LINK]->(n:Site) WHERE EXISTS(s.ntype) RETURN s.name, n.name")
     return edges
