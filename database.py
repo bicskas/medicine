@@ -22,27 +22,30 @@ def graphOpen():
 def setBaseNode(base):
     global basenode
     basenode = base
-    #site = Site()
-    #site.name = base
-    #site = graph.merge(site,'name')
-    #print(site,basenode)
+    # site = Site()
+    # site.name = base
+    # site = graph.merge(site,'name')
+    # print(site,basenode)
 
 
 def deleteAll():
     graph.delete_all()
 
 
-def elment(site):
+def elment(site, type=None):
     newSite = Site()
     newSite.name = site
-    newSite.ntype = "undefined"
-    # newSite.size = 1
-    # graph.push(newSite)
-    graph.merge(newSite, "name",newSite.name)
+    graph.merge(newSite)
+    if type is not None:
+        newSite.ntype = type
+    elif newSite.ntype is not None:
+        newSite.ntype = newSite.ntype
+    else:
+        newSite.ntype = "undefined"
+    print('Mentés: ', site, ' Típus: ', newSite.ntype)
     if newSite.size is None:
         newSite.size = 1
         graph.push(newSite)
-
 
 def addToBase(base, site):
     basesite = Site.select(graph, base).first()
@@ -53,11 +56,11 @@ def addToBase(base, site):
 
 
 def addSize():
-    #node = basenode
-    #size = basenode.size
-    #graph.merge(node)
-    #node.size = size + 1
-    #graph.push(node)
+    # node = basenode
+    # size = basenode.size
+    # graph.merge(node)
+    # node.size = size + 1
+    # graph.push(node)
     a = 12
 
 
