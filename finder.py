@@ -12,6 +12,7 @@ global visited
 visited = []
 
 global queue
+queue = None
 queue = []
 
 global level
@@ -113,11 +114,14 @@ def kiir(sublinks):
 
 
 # -----------------------------------------------------------------------------
-starturls = {"http://reductilrendeles.com/": "illegal", "https://www.viagrapatika.com/": "illegal",
+starturls = {"http://reductilrendeles.com/": "illegal",
+             "https://www.viagrapatika.com/": "illegal",
              "http://viagra-rendeles.net/": "illegal",
-             "http://fogyasztoszer.com/": "illegal", "http://koksz.info": "illegal",
+             "http://fogyasztoszer.com/": "illegal",
+             "http://koksz.info": "illegal",
              "http://www.ivancsapatika.hu/": "legal",
-             "http://pingvinpatika.hu/": "legal", "http://www.sipo.hu/": "legal"}
+             "http://pingvinpatika.hu/": "legal",
+             "http://www.sipo.hu/": "legal"}
 
 melyseg = 4
 database.graphOpen()
@@ -125,7 +129,6 @@ database.deleteAll()
 
 setQeueRange(melyseg)
 # setBaseUrl(starturl)
-
 for url, type in starturls.items():
     addToQueue(0, url)
     setBaseUrl(url)

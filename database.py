@@ -35,17 +35,18 @@ def deleteAll():
 def elment(site, type=None):
     newSite = Site()
     newSite.name = site
-    graph.merge(newSite)
-    if type is not None:
-        newSite.ntype = type
-    elif newSite.ntype is not None:
-        newSite.ntype = newSite.ntype
-    else:
-        newSite.ntype = "undefined"
-    print('Mentés: ', site, ' Típus: ', newSite.ntype)
-    if newSite.size is None:
-        newSite.size = 1
+    exist = graph.data("MATCH (s:Site) WHERE s.name = '" + site + "' RETURN s LIMIT 1")
+    if not exist:
+        if type is not None:
+            newSite.ntype = type
+        else:
+            newSite.ntype = "undefined"
+
+        if newSite.size is None:
+            newSite.size = 1
+        print('Mentés: ', newSite)
         graph.push(newSite)
+
 
 def addToBase(base, site):
     basesite = Site.select(graph, base).first()
@@ -56,12 +57,18 @@ def addToBase(base, site):
 
 
 def addSize():
-    # node = basenode
+    node = Site()
+    exist = graph.data("MATCH (s:Site) WHERE s.name = '" + basenode + "' RETURN s LIMIT 1")
+    print(exist,'\n',exist[0],'\n',exist[0]['s']['name'])
+    if exist:
+        node.name = exist[0]['s']['name']
+        node.size = exist[0]['s']['size'] + 1
+        node.ntype = exist[0]['s']['ntype']
     # size = basenode.size
     # graph.merge(node)
     # node.size = size + 1
-    # graph.push(node)
-    a = 12
+    graph.merge(node)
+    print(exist[0]['s']['size'], node)
 
 
 def getNodes():

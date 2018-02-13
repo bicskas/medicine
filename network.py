@@ -4,6 +4,10 @@ import collections
 import networkx as nx
 import matplotlib.pyplot as plt
 
+def rgb2hex(r,g,b):
+    hex = "#{:02x}{:02x}{:02x}".format(r,g,b)
+    return hex
+
 database.graphOpen()
 nodes = database.getNodes()
 edges = database.getEdges()
@@ -12,24 +16,30 @@ G = nx.Graph()
 
 for n in nodes:
     G.add_node(n['a.name'],ntype = n['a.ntype'])
-    print(n['a.name'],'ntype =', n['a.ntype'])
 
 for e in edges:
     G.add_edge(e['s.name'], e['n.name'])
 
+colors = []
 for item in G.nodes(data=True):
     if item[1]['ntype'] == 'legal':
-        G.node[item[0]]['viz'] = {'color': {'r': 255, 'g': 0, 'b': 0, 'a': 0}}
-    elif item[1]['ntype'] == 'illegal':
         G.node[item[0]]['viz'] = {'color': {'r': 0, 'g': 255, 'b': 0, 'a': 0}}
+    elif item[1]['ntype'] == 'illegal':
+        G.node[item[0]]['viz'] = {'color': {'r': 255, 'g': 0, 'b': 0, 'a': 0}}
     else:
             G.node[item[0]]['viz'] = {'color': {'r': 20, 'g': 20, 'b': 20, 'a': 0}}
+    red = G.node[item[0]]['viz']['color']['r']
+    green = G.node[item[0]]['viz']['color']['g']
+    blue = G.node[item[0]]['viz']['color']['b']
+    colors.append(rgb2hex(red, green, blue))
 
+print(colors)
 nx.write_gexf(G, 'test.gexf')
 # gráf kirajzolása
-#nx.draw(G, node_size=12, alpha=0.8,with_labels=False, font_weight='normal',font_size='8', font_color='brown')
+
+nx.draw(G, node_size=12, alpha=0.8,with_labels=False, font_weight='normal',font_size='8', font_color='brown', node_color = colors)
 # plt.show(dpi=2000)
-#plt.savefig("test.png",dpi=2000)
+plt.savefig("test.png",dpi=2000)
 # sorted(d for n, d in G.degree())
 # print(G.number_of_edges())
 
