@@ -15,7 +15,7 @@ edges = database.getEdges()
 G = nx.Graph()
 
 for n in nodes:
-    G.add_node(n['a.name'],ntype = n['a.ntype'])
+    G.add_node(n['a.name'],ntype = n['a.ntype'],size = n['a.size'])
 
 for e in edges:
     G.add_edge(e['s.name'], e['n.name'])

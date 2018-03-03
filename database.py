@@ -72,7 +72,7 @@ def addSize():
 
 
 def getNodes():
-    nodes = graph.data("MATCH (a:Site) WHERE EXISTS(a.ntype) RETURN a.name, a.ntype")
+    nodes = graph.data("MATCH (a:Site) WHERE EXISTS(a.ntype) RETURN a.name, a.ntype, a.size")
     return nodes
 
 
