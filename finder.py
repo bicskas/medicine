@@ -125,7 +125,7 @@ starturls = {"http://reductilrendeles.com/": "illegal",
 
 melyseg = 4
 database.graphOpen()
-database.deleteAll()
+#database.deleteAll()
 
 setQeueRange(melyseg)
 # setBaseUrl(starturl)
