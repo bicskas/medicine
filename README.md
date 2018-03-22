@@ -8,7 +8,8 @@ The env file is a configuration file, where you can set the database connenction
 "requirements.txt" is a file containing a list of items to be installed
 
 **Create network**
-To create a network use the *finder.py* file. This file contains the starurls variable, which is define initial urls and types (legal or illegal).
+To create a network use the *finder.py* file. 
+To set the start urls change the *urls.txt* file. Each url must be a new line.  The format **"http://www.example.com" : "type"**. Type can be legal, illegal or undefined. Each line must end with a comma except the last line. It's important to use *"* not apostrophe (*'*)
  
 **Data**
 
