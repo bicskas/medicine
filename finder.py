@@ -7,6 +7,8 @@ import database
 import urllib.request
 from urllib.parse import urljoin
 from urllib.parse import urlparse
+import ast
+from urllib.request import urlopen
 
 global visited
 visited = []
@@ -18,6 +20,9 @@ queue = []
 global level
 level = []
 
+def clearSource(source):
+    cleaned = str(source).replace("\n",'').replace("\',",'').replace(" ",'').replace("\'",'').replace("[",'').replace("]",'').replace("\"",'\'')
+    return cleaned
 
 def setBaseUrl(url):
     global baseurl
@@ -114,14 +119,17 @@ def kiir(sublinks):
 
 
 # -----------------------------------------------------------------------------
-starturls = {"http://reductilrendeles.com/": "illegal",
-             "https://www.viagrapatika.com/": "illegal",
-             "http://viagra-rendeles.net/": "illegal",
-             "http://fogyasztoszer.com/": "illegal",
-             "http://koksz.info": "illegal",
-             "http://www.ivancsapatika.hu/": "legal",
-             "http://pingvinpatika.hu/": "legal",
-             "http://www.sipo.hu/": "legal"}
+urlfile = open("urls.txt","r")#
+lines = '{' + clearSource(urlfile.read()) + '}'
+print(lines)
+print(ast.literal_eval(lines))
+#starturls = ast.literal_eval(lines)
+testzt = "{'foo' : 'bar', 'hello' : 'world'}"
+starturls = ast.literal_eval(lines)
+urlfile.close()
+
+
+print(type(starturls), type(lines),type(testzt))
 
 melyseg = 4
 database.graphOpen()
