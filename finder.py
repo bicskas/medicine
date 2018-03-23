@@ -119,17 +119,12 @@ def kiir(sublinks):
 
 
 # -----------------------------------------------------------------------------
-urlfile = open("urls.txt","r")#
+urlfile = open("urls.txt","r")
 lines = '{' + clearSource(urlfile.read()) + '}'
-print(lines)
-print(ast.literal_eval(lines))
-#starturls = ast.literal_eval(lines)
-testzt = "{'foo' : 'bar', 'hello' : 'world'}"
 starturls = ast.literal_eval(lines)
 urlfile.close()
 
 
-print(type(starturls), type(lines),type(testzt))
 
 melyseg = 4
 database.graphOpen()
