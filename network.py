@@ -18,7 +18,7 @@ for n in nodes:
     G.add_node(n['a.name'],ntype = n['a.ntype'],size = n['a.size'])
 
 for e in edges:
-    G.add_edge(e['s.name'], e['n.name'])
+    G.add_edge(e['n.name'], e['s.name'])
 
 colors = []
 for item in G.nodes(data=True):

@@ -59,7 +59,7 @@ def addToBase(base, site):
 def addSize():
     node = Site()
     exist = graph.data("MATCH (s:Site) WHERE s.name = '" + basenode + "' RETURN s LIMIT 1")
-    print(exist,'\n',exist[0],'\n',exist[0]['s']['name'])
+    # print(exist,'\n',exist[0],'\n',exist[0]['s']['name'])
     if exist:
         node.name = exist[0]['s']['name']
         node.size = exist[0]['s']['size'] + 1
@@ -68,7 +68,7 @@ def addSize():
     # graph.merge(node)
     # node.size = size + 1
     graph.merge(node)
-    print(exist[0]['s']['size'], node)
+    # print(exist[0]['s']['size'], node)
 
 
 def getNodes():

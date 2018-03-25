@@ -8,6 +8,8 @@ import urllib.request
 from urllib.parse import urljoin
 from urllib.parse import urlparse
 import ast
+import tinydbtest
+
 from urllib.request import urlopen
 
 global visited
@@ -63,7 +65,10 @@ def getName(name):
 def getParse(baseurl):
     url = baseurl
     addToVisited(url)
-    html_page = urllib.request.urlopen(url)
+    try:
+        html_page = urllib.request.urlopen(url)
+    except:
+        html_page = ''
     # parse html
     parse = BeautifulSoup(html_page, 'lxml')
     return parse
@@ -111,10 +116,17 @@ def getURL(page):
 def kiir(sublinks):
     for i in range(len(sublinks)):
         path = urlparse(sublinks[i]).scheme + '://' + urlparse(sublinks[i]).netloc
-        if (path != baseurl):
+
+        tinyName = urlparse(sublinks[i]).netloc + urlparse(sublinks[i]).path
+        tinyVisited = tinydbtest.getTinySite(tinyName)
+        tinydbtest.saveTiny(tinyName)
+
+        currenturl = urlparse(sublinks[i]).netloc
+        mainurl =  urlparse(baseurl).netloc
+        if (currenturl != mainurl):
             database.elment(getName(sublinks[i]))
             database.addToBase(getName(baseurl), getName(sublinks[i]))
-        elif (path == baseurl):
+        elif (currenturl == mainurl and not tinyVisited):
             database.addSize()
 
 

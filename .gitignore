@@ -1,3 +1,6 @@
 .idea/
 .idea/*
 .env
+db.json
+__pycache__
+tinydbs

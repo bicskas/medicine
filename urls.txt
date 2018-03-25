@@ -1,8 +1,8 @@
+"http://www.sipo.hu/": "legal",
 "http://reductilrendeles.com/": "illegal",
 "https://www.viagrapatika.com/": "illegal",
 "http://viagra-rendeles.net/": "illegal",
-             "http://fogyasztoszer.com/": "illegal",
-             "http://koksz.info": "illegal",
-             "http://www.ivancsapatika.hu/": "legal",
-             "http://pingvinpatika.hu/": "legal",
-             "http://www.sipo.hu/": "legal"
+"http://fogyasztoszer.com/": "illegal",
+"http://koksz.info": "illegal",
+"http://www.ivancsapatika.hu/": "legal",
+ "http://pingvinpatika.hu/": "legal"
