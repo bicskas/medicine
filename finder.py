@@ -1,7 +1,5 @@
 #!/usr/bin/env python
-from random import randint
 
-import requests
 from bs4 import BeautifulSoup
 import database
 import urllib.request
@@ -9,8 +7,6 @@ from urllib.parse import urljoin
 from urllib.parse import urlparse
 import ast
 import tinydbtest
-
-from urllib.request import urlopen
 
 global visited
 visited = []
@@ -21,6 +17,9 @@ queue = []
 
 global level
 level = []
+
+global oldalszam
+oldalszam = 1
 
 def clearSource(source):
     cleaned = str(source).replace("\n",'').replace("\',",'').replace(" ",'').replace("\'",'').replace("[",'').replace("]",'').replace("\"",'\'')
@@ -42,7 +41,7 @@ def addToVisited(url):
 
 
 def addToQueue(szint, url):
-    if not url in queue and not url in visited:
+    if not any(url in sublist for sublist in queue) and not url in visited:
         queue[szint].append(url)
         level[szint].append(url)
 
@@ -64,13 +63,17 @@ def getName(name):
 # az adott oldal html részét adja vissza
 def getParse(baseurl):
     url = baseurl
-    addToVisited(url)
+    tinydbtest.addToVisited(url)
+    tinydbtest.updateTinySite(url)
     try:
         html_page = urllib.request.urlopen(url)
     except:
         html_page = ''
     # parse html
     parse = BeautifulSoup(html_page, 'lxml')
+    global oldalszam
+    print('Site downloaded: ' + url + ' Downloaded sites: ' + str(oldalszam))
+    oldalszam += 1
     return parse
 
 
@@ -152,17 +155,19 @@ for url, type in starturls.items():
     database.setBaseNode(getName(baseurl))
     # removeFromQueue(0, baseurl)
     kiir(getURL(page))
-
-i = 1
+print(queue)
+i = 5
 while i < melyseg:
     for q in queue[i]:
-        # print('----------------------------------------\nLátogatott:',visited,'\ntömb:',queue[i],'\nadott:',q)
-        if not q in visited:
+        tinyName = urlparse(q).netloc + urlparse(q).path
+
+        if not q in visited and not tinydbtest.inVisited(tinyName):
             setBaseUrl(q)
             database.setBaseNode(getName(q))
             # removeFromQueue(getSzint(level, q), q)
             try:
                 page = getParse(baseurl)
+                tinydbtest.addToVisited(tinyName)
                 # print(baseurl, 'megnyitva')
                 kiir(getURL(page))
             except:
