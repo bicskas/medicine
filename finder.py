@@ -156,7 +156,7 @@ for url, type in starturls.items():
     # removeFromQueue(0, baseurl)
     kiir(getURL(page))
 print(queue)
-i = 5
+i = 1
 while i < melyseg:
     for q in queue[i]:
         tinyName = urlparse(q).netloc + urlparse(q).path

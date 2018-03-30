@@ -44,7 +44,7 @@ def elment(site, type=None):
 
         if newSite.size is None:
             newSite.size = 1
-        print('Mentés: ', newSite)
+        #print('Save: ', newSite)
         graph.push(newSite)
 
 
