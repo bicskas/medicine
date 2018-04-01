@@ -1,5 +1,7 @@
-qu = [['alma','korte'],['valami','semmi'],['plusz']]
-sima = ['alma','korte','valam']
+import sys
+import time
 
-if any('alma' in sublist for sublist in qu):
-    print('benne van ')
+for i in range(10):
+    sys.stdout.write("\r{0}>".format("="*i))
+    sys.stdout.flush()
+    time.sleep(0.5)

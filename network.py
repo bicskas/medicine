@@ -12,13 +12,13 @@ database.graphOpen()
 nodes = database.getNodes()
 edges = database.getEdges()
 # print(nodes,'\n',edges)
-G = nx.Graph()
+G = nx.DiGraph()
 
 for n in nodes:
     G.add_node(n['a.name'],ntype = n['a.ntype'],size = n['a.size'])
 
 for e in edges:
-    G.add_edge(e['n.name'], e['s.name'])
+    G.add_edge(e['s.name'], e['n.name'])
 
 colors = []
 for item in G.nodes(data=True):
@@ -26,8 +26,10 @@ for item in G.nodes(data=True):
         G.node[item[0]]['viz'] = {'color': {'r': 0, 'g': 255, 'b': 0, 'a': 0}}
     elif item[1]['ntype'] == 'illegal':
         G.node[item[0]]['viz'] = {'color': {'r': 255, 'g': 0, 'b': 0, 'a': 0}}
+    elif item[1]['ntype'] == 'gov':
+        G.node[item[0]]['viz'] = {'color': {'r': 20, 'g': 50, 'b': 222, 'a': 0}}
     else:
-            G.node[item[0]]['viz'] = {'color': {'r': 20, 'g': 20, 'b': 20, 'a': 0}}
+            G.node[item[0]]['viz'] = {'color': {'r': 170, 'g': 170, 'b': 170, 'a': 0}}
     red = G.node[item[0]]['viz']['color']['r']
     green = G.node[item[0]]['viz']['color']['g']
     blue = G.node[item[0]]['viz']['color']['b']

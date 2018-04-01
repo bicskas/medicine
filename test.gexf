@@ -1,286 +1,1654 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
-  <graph defaultedgetype="undirected" mode="static" name="">
+  <graph defaultedgetype="directed" mode="static" name="">
     <attributes class="node" mode="static">
-      <attribute id="0" title="ntype" type="string" />
-      <attribute id="1" title="size" type="long" />
+      <attribute id="0" title="size" type="long" />
+      <attribute id="1" title="ntype" type="string" />
     </attributes>
     <meta>
       <creator>NetworkX 2.1</creator>
-      <lastmodified>25/03/2018</lastmodified>
+      <lastmodified>01/04/2018</lastmodified>
     </meta>
     <nodes>
-      <node id="sipo.hu" label="sipo.hu">
-        <viz:color a="0" b="0" g="255" r="0" />
+      <node id="subtypestore.com" label="subtypestore.com">
+        <viz:color a="0" b="170" g="170" r="170" />
         <attvalues>
-          <attvalue for="0" value="legal" />
-          <attvalue for="1" value="819" />
-        </attvalues>
-      </node>
-      <node id="arukereso.hu" label="arukereso.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="argep.hu" label="argep.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="sipo.shoprenter.hu" label="sipo.shoprenter.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="reductilrendeles.com" label="reductilrendeles.com">
-        <viz:color a="0" b="0" g="0" r="255" />
-        <attvalues>
-          <attvalue for="0" value="illegal" />
-          <attvalue for="1" value="7" />
-        </attvalues>
-      </node>
-      <node id="statcounter.hu" label="statcounter.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="viagrapatika.com" label="viagrapatika.com">
-        <viz:color a="0" b="0" g="0" r="255" />
-        <attvalues>
-          <attvalue for="0" value="illegal" />
-          <attvalue for="1" value="23" />
-        </attvalues>
-      </node>
-      <node id="viagra-rendeles.net" label="viagra-rendeles.net">
-        <viz:color a="0" b="0" g="0" r="255" />
-        <attvalues>
-          <attvalue for="0" value="illegal" />
-          <attvalue for="1" value="15" />
-        </attvalues>
-      </node>
-      <node id="budapesterotika.hu" label="budapesterotika.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="fogyasztoszer.com" label="fogyasztoszer.com">
-        <viz:color a="0" b="0" g="0" r="255" />
-        <attvalues>
-          <attvalue for="0" value="illegal" />
-          <attvalue for="1" value="8" />
-        </attvalues>
-      </node>
-      <node id="freewordpressthemes4u.com" label="freewordpressthemes4u.com">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="ecouponcamp.com" label="ecouponcamp.com">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="adipexforum.hu" label="adipexforum.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="adipex-retard.net" label="adipex-retard.net">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="adipex.ws" label="adipex.ws">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="vitalitis.info" label="vitalitis.info">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="adipex-regenon-reductil.com" label="adipex-regenon-reductil.com">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="koffein.hu" label="koffein.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
         </attvalues>
       </node>
       <node id="sziv.net" label="sziv.net">
-        <viz:color a="0" b="20" g="20" r="20" />
+        <viz:color a="0" b="170" g="170" r="170" />
         <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
+          <attvalue for="0" value="30" />
+          <attvalue for="1" value="undefined" />
         </attvalues>
       </node>
-      <node id="kamagra-zsele.hu" label="kamagra-zsele.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
+      <node id="seller.indiamart.com" label="seller.indiamart.com">
+        <viz:color a="0" b="170" g="170" r="170" />
         <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
         </attvalues>
       </node>
-      <node id="kamagraforum.hu" label="kamagraforum.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
+      <node id="sipo.shoprenter.hu" label="sipo.shoprenter.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
         <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
         </attvalues>
       </node>
-      <node id="viagraforum.hu" label="viagraforum.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
+      <node id="mkbklub.hu" label="mkbklub.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
         <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
         </attvalues>
       </node>
-      <node id="cialisforum.hu" label="cialisforum.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
+      <node id="luvd.com" label="luvd.com">
+        <viz:color a="0" b="170" g="170" r="170" />
         <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
         </attvalues>
       </node>
-      <node id="levitraforum.hu" label="levitraforum.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
+      <node id="kamillapatika.shoprenter.hu" label="kamillapatika.shoprenter.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
         <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="undefined" />
         </attvalues>
       </node>
-      <node id="index.hu" label="index.hu">
-        <viz:color a="0" b="20" g="20" r="20" />
+      <node id="feeds.feedburner.com" label="feeds.feedburner.com">
+        <viz:color a="0" b="170" g="170" r="170" />
         <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
         </attvalues>
       </node>
-      <node id="koksz.info" label="koksz.info">
+      <node id="szexpartner.info.hu" label="szexpartner.info.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="ssl-checkout-page.com" label="ssl-checkout-page.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="joautok.hu" label="joautok.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="instagram.com" label="instagram.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="vitalitis.info" label="vitalitis.info">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="dragon-power.biz" label="dragon-power.biz">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="adipex-retard.net" label="adipex-retard.net">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="statcounter.com" label="statcounter.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="almaokosveny.hu" label="almaokosveny.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="techhero.com" label="techhero.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="linkedin.com" label="linkedin.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="5" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="hvg.hu" label="hvg.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="podpinka" label="podpinka">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="api.statcounter.com" label="api.statcounter.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="dex.hu" label="dex.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="szteroid.com" label="szteroid.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="uksleepingpills.com" label="uksleepingpills.com">
         <viz:color a="0" b="0" g="0" r="255" />
         <attvalues>
-          <attvalue for="0" value="illegal" />
-          <attvalue for="1" value="92" />
-        </attvalues>
-      </node>
-      <node id="hu.wordpress.org" label="hu.wordpress.org">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="illegal" />
         </attvalues>
       </node>
       <node id="woocommerce.com" label="woocommerce.com">
-        <viz:color a="0" b="20" g="20" r="20" />
+        <viz:color a="0" b="170" g="170" r="170" />
         <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="ivancsapatika.hu" label="ivancsapatika.hu">
-        <viz:color a="0" b="0" g="255" r="0" />
-        <attvalues>
-          <attvalue for="0" value="legal" />
-          <attvalue for="1" value="48" />
-        </attvalues>
-      </node>
-      <node id="reliablecounter.com" label="reliablecounter.com">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="fabbly.com" label="fabbly.com">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
-        </attvalues>
-      </node>
-      <node id="flickr.com" label="flickr.com">
-        <viz:color a="0" b="20" g="20" r="20" />
-        <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
+          <attvalue for="0" value="23" />
+          <attvalue for="1" value="undefined" />
         </attvalues>
       </node>
       <node id="pingvinpatika.hu" label="pingvinpatika.hu">
         <viz:color a="0" b="0" g="255" r="0" />
         <attvalues>
-          <attvalue for="0" value="legal" />
-          <attvalue for="1" value="9" />
+          <attvalue for="0" value="33" />
+          <attvalue for="1" value="legal" />
+        </attvalues>
+      </node>
+      <node id="eur-lex.europa.eu" label="eur-lex.europa.eu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="anorexia.lap.hu" label="anorexia.lap.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="ivancsapatika.hu" label="ivancsapatika.hu">
+        <viz:color a="0" b="0" g="255" r="0" />
+        <attvalues>
+          <attvalue for="0" value="280" />
+          <attvalue for="1" value="legal" />
+        </attvalues>
+      </node>
+      <node id="port.hu" label="port.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="femina.hu" label="femina.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="indamail.hu" label="indamail.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="panaceaonlinepatika.hu" label="panaceaonlinepatika.hu">
+        <viz:color a="0" b="0" g="255" r="0" />
+        <attvalues>
+          <attvalue for="0" value="597" />
+          <attvalue for="1" value="legal" />
+        </attvalues>
+      </node>
+      <node id="statcounter.hu" label="statcounter.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="118" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="iplocation.net" label="iplocation.net">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="stripe.com" label="stripe.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="d11bh4d8fhuq47.cloudfront.net" label="d11bh4d8fhuq47.cloudfront.net">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="almapatika.com" label="almapatika.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="striiiipes.com" label="striiiipes.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="developer.wordpress.org" label="developer.wordpress.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="myavreceiver.com" label="myavreceiver.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="kozosseg.wphu.org" label="kozosseg.wphu.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="behance.net" label="behance.net">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="nivea.hu" label="nivea.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="gs.statcounter.com" label="gs.statcounter.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="careers.indiamart.com" label="careers.indiamart.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="jobinfo.hu" label="jobinfo.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="learn.wordpress.org" label="learn.wordpress.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="flickr.com" label="flickr.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="cialis-cialis.org" label="cialis-cialis.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="DUNAKESZI%202120%20BARÁTSÁG%20ÚT%2020%207.EM%2045" label="DUNAKESZI%202120%20BARÁTSÁG%20ÚT%2020%207.EM%2045">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="edmedicinestore.com" label="edmedicinestore.com">
+        <viz:color a="0" b="0" g="0" r="255" />
+        <attvalues>
+          <attvalue for="0" value="78" />
+          <attvalue for="1" value="illegal" />
+        </attvalues>
+      </node>
+      <node id="medigen.hu" label="medigen.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="weber.co.za" label="weber.co.za">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="auth.mailservice.com" label="auth.mailservice.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="nfh.hu" label="nfh.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="benu.hu" label="benu.hu">
+        <viz:color a="0" b="0" g="255" r="0" />
+        <attvalues>
+          <attvalue for="0" value="6480" />
+          <attvalue for="1" value="legal" />
+        </attvalues>
+      </node>
+      <node id="blog.statcounter.com" label="blog.statcounter.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="uspillspharmacy.com" label="uspillspharmacy.com">
+        <viz:color a="0" b="0" g="0" r="255" />
+        <attvalues>
+          <attvalue for="0" value="35" />
+          <attvalue for="1" value="illegal" />
+        </attvalues>
+      </node>
+      <node id="projectorlive.com" label="projectorlive.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="trends.builtwith.com" label="trends.builtwith.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="youtube.com" label="youtube.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="twitter.com" label="twitter.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="wordpressfoundation.org" label="wordpressfoundation.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="genericdrugsshop.com" label="genericdrugsshop.com">
+        <viz:color a="0" b="0" g="0" r="255" />
+        <attvalues>
+          <attvalue for="0" value="450" />
+          <attvalue for="1" value="illegal" />
+        </attvalues>
+      </node>
+      <node id="Lófasz" label="Lófasz">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="walplast.co.in" label="walplast.co.in">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="zanerobe.com" label="zanerobe.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="ecouponcamp.com" label="ecouponcamp.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="l.facebook.com" label="l.facebook.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="naih.hu" label="naih.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="forum.index.hu" label="forum.index.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="koksz.info" label="koksz.info">
+        <viz:color a="0" b="0" g="0" r="255" />
+        <attvalues>
+          <attvalue for="0" value="1131" />
+          <attvalue for="1" value="illegal" />
+        </attvalues>
+      </node>
+      <node id="magnosolv.hu" label="magnosolv.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="viagrapatika.com" label="viagrapatika.com">
+        <viz:color a="0" b="0" g="0" r="255" />
+        <attvalues>
+          <attvalue for="0" value="111" />
+          <attvalue for="1" value="illegal" />
+        </attvalues>
+      </node>
+      <node id="make.wordpress.org" label="make.wordpress.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="szevasztok.blog.hu" label="szevasztok.blog.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="blog.hu" label="blog.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="indafoto.hu" label="indafoto.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="adipex-regenon-reductil.com" label="adipex-regenon-reductil.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="21" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="akaciapatika.hu" label="akaciapatika.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="kamillapatika.com" label="kamillapatika.com">
+        <viz:color a="0" b="0" g="255" r="0" />
+        <attvalues>
+          <attvalue for="0" value="1958" />
+          <attvalue for="1" value="legal" />
+        </attvalues>
+      </node>
+      <node id="ad.adverticum.net" label="ad.adverticum.net">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="kamagra-zsele.hu" label="kamagra-zsele.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="53" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="patika24.hu" label="patika24.hu">
+        <viz:color a="0" b="0" g="255" r="0" />
+        <attvalues>
+          <attvalue for="0" value="383" />
+          <attvalue for="1" value="legal" />
+        </attvalues>
+      </node>
+      <node id="reductil-zenslim.com" label="reductil-zenslim.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="levitraforum.hu" label="levitraforum.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="81" label="81">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="pro4mance.com.au" label="pro4mance.com.au">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="viagrarendeles.org" label="viagrarendeles.org">
+        <viz:color a="0" b="0" g="0" r="255" />
+        <attvalues>
+          <attvalue for="0" value="18" />
+          <attvalue for="1" value="illegal" />
+        </attvalues>
+      </node>
+      <node id="hu.wordpress.org" label="hu.wordpress.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="15" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="plus.google.com" label="plus.google.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="nyitaselott.gyogyszer.info" label="nyitaselott.gyogyszer.info">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="central.wordcamp.org" label="central.wordcamp.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="corporateindiamart.wordpress.com" label="corporateindiamart.wordpress.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="corporate.indiamart.com" label="corporate.indiamart.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="51" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="en.wikipedia.org" label="en.wikipedia.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="freewordpressthemes4u.com" label="freewordpressthemes4u.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
         </attvalues>
       </node>
       <node id="Nuxellence® DETOX" label="Nuxellence® DETOX">
-        <viz:color a="0" b="20" g="20" r="20" />
+        <viz:color a="0" b="170" g="170" r="170" />
         <attvalues>
-          <attvalue for="0" value="undefined" />
-          <attvalue for="1" value="1" />
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="messenger.com" label="messenger.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="my.indiamart.com" label="my.indiamart.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="indavideo.hu" label="indavideo.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="viagra-rendeles.net" label="viagra-rendeles.net">
+        <viz:color a="0" b="0" g="0" r="255" />
+        <attvalues>
+          <attvalue for="0" value="76" />
+          <attvalue for="1" value="illegal" />
+        </attvalues>
+      </node>
+      <node id="google.com" label="google.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="mkb.hu" label="mkb.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="erotika.indavideo.hu" label="erotika.indavideo.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="microsoft.com" label="microsoft.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="szteroidforum.com" label="szteroidforum.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="jan.11-re%20szeretnem%20megkapni" label="jan.11-re%20szeretnem%20megkapni">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="kamillapatika.cdn.shoprenter.hu" label="kamillapatika.cdn.shoprenter.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="forum.statcounter.com" label="forum.statcounter.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="storefront.wordpress.com" label="storefront.wordpress.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="koksz.hu" label="koksz.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="kamagrashop.hu" label="kamagrashop.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="totalcar.hu" label="totalcar.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="wordpress.com" label="wordpress.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="chats.viber.com" label="chats.viber.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="fitness-trackers.org" label="fitness-trackers.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="otthonterkep.hu" label="otthonterkep.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="botanikboutique.com.au" label="botanikboutique.com.au">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="10times.com" label="10times.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="allas.hu" label="allas.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="extremetracking.com" label="extremetracking.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="shoprenter.hu" label="shoprenter.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="hungaropharma.hu" label="hungaropharma.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="24" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="disqus.com" label="disqus.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="php-gynsz.hu" label="php-gynsz.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="play.google.com" label="play.google.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="docs.woocommerce.com" label="docs.woocommerce.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="themakersofindia.com" label="themakersofindia.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="kreativvonalak.hu" label="kreativvonalak.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="23" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="koffein.hu" label="koffein.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="7" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="wordpress.org" label="wordpress.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="patika.net" label="patika.net">
+        <viz:color a="0" b="0" g="255" r="0" />
+        <attvalues>
+          <attvalue for="0" value="503" />
+          <attvalue for="1" value="legal" />
+        </attvalues>
+      </node>
+      <node id="dronecamera.org" label="dronecamera.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="reliablecounter.com" label="reliablecounter.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="191" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="fabbly.com" label="fabbly.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="160" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="dir.indiamart.com" label="dir.indiamart.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="adipexforum.hu" label="adipexforum.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="tokki.com.au" label="tokki.com.au">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="mailservice.com" label="mailservice.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="prevenciopatika.hu" label="prevenciopatika.hu">
+        <viz:color a="0" b="0" g="255" r="0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="legal" />
+        </attvalues>
+      </node>
+      <node id="buddypress.org" label="buddypress.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="trade.indiamart.com" label="trade.indiamart.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="fuchstibi" label="fuchstibi">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="allblackshop.com" label="allblackshop.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="videoklinika.hu" label="videoklinika.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="domainflotta.hu" label="domainflotta.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="windowsphone.com" label="windowsphone.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="arukereso.hu" label="arukereso.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="wphu.org" label="wphu.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="praxisplatform.hu" label="praxisplatform.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="reductilrendeles.com" label="reductilrendeles.com">
+        <viz:color a="0" b="0" g="0" r="255" />
+        <attvalues>
+          <attvalue for="0" value="31" />
+          <attvalue for="1" value="illegal" />
+        </attvalues>
+      </node>
+      <node id="talkabot.net" label="talkabot.net">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="fogyasztoszer.com" label="fogyasztoszer.com">
+        <viz:color a="0" b="0" g="0" r="255" />
+        <attvalues>
+          <attvalue for="0" value="37" />
+          <attvalue for="1" value="illegal" />
+        </attvalues>
+      </node>
+      <node id="ideas.woocommerce.com" label="ideas.woocommerce.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="m.edmedicinestore.com" label="m.edmedicinestore.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="fabberforum.com" label="fabberforum.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="ogyei.gov.hu" label="ogyei.gov.hu">
+        <viz:color a="0" b="222" g="50" r="20" />
+        <attvalues>
+          <attvalue for="0" value="79" />
+          <attvalue for="1" value="gov" />
+        </attvalues>
+      </node>
+      <node id="wordpress.tv" label="wordpress.tv">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="automattic.com" label="automattic.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="ema.europa.eu" label="ema.europa.eu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="kamagraforum.hu" label="kamagraforum.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="besocial.hu" label="besocial.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="viagraforum.hu" label="viagraforum.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="velvet.hu" label="velvet.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="indiamart.com" label="indiamart.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="43" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="bbpress.org" label="bbpress.org">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="facebook.com" label="facebook.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="87" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="budapesterotika.hu" label="budapesterotika.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="itunes.apple.com" label="itunes.apple.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="gyongypatikak.hu" label="gyongypatikak.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="sipo.hu" label="sipo.hu">
+        <viz:color a="0" b="0" g="255" r="0" />
+        <attvalues>
+          <attvalue for="0" value="3656" />
+          <attvalue for="1" value="legal" />
+        </attvalues>
+      </node>
+      <node id="accounts.google.com" label="accounts.google.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="ma.tt" label="ma.tt">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="argep.hu" label="argep.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="napi.hu" label="napi.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="index.hu" label="index.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="40" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="hirlevel.sipopatikak.hu" label="hirlevel.sipopatikak.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="bauschandlomb.hu" label="bauschandlomb.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="portfolio.hu" label="portfolio.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="ec.europa.eu" label="ec.europa.eu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="help.indiamart.com" label="help.indiamart.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="otpbank.hu" label="otpbank.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="divany.hu" label="divany.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="l" label="l">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="hph.hu" label="hph.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="xeroshoes.com" label="xeroshoes.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="woocommerce.wordpress.com" label="woocommerce.wordpress.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="almapatika.hu" label="almapatika.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="51" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="m.indiamart.com" label="m.indiamart.com">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="adipex.ws" label="adipex.ws">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
+        </attvalues>
+      </node>
+      <node id="cialisforum.hu" label="cialisforum.hu">
+        <viz:color a="0" b="170" g="170" r="170" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="undefined" />
         </attvalues>
       </node>
     </nodes>
     <edges>
-      <edge id="0" source="sipo.hu" target="Nuxellence® DETOX" />
-      <edge id="1" source="sipo.hu" target="sipo.hu" />
-      <edge id="2" source="sipo.hu" target="sipo.shoprenter.hu" />
-      <edge id="3" source="sipo.hu" target="argep.hu" />
-      <edge id="4" source="sipo.hu" target="arukereso.hu" />
-      <edge id="5" source="reductilrendeles.com" target="reductilrendeles.com" />
-      <edge id="6" source="reductilrendeles.com" target="statcounter.hu" />
-      <edge id="7" source="statcounter.hu" target="viagra-rendeles.net" />
-      <edge id="8" source="statcounter.hu" target="fogyasztoszer.com" />
-      <edge id="9" source="viagra-rendeles.net" target="viagra-rendeles.net" />
-      <edge id="10" source="viagra-rendeles.net" target="budapesterotika.hu" />
-      <edge id="11" source="fogyasztoszer.com" target="index.hu" />
-      <edge id="12" source="fogyasztoszer.com" target="levitraforum.hu" />
-      <edge id="13" source="fogyasztoszer.com" target="cialisforum.hu" />
-      <edge id="14" source="fogyasztoszer.com" target="viagraforum.hu" />
-      <edge id="15" source="fogyasztoszer.com" target="kamagraforum.hu" />
-      <edge id="16" source="fogyasztoszer.com" target="kamagra-zsele.hu" />
-      <edge id="17" source="fogyasztoszer.com" target="sziv.net" />
-      <edge id="18" source="fogyasztoszer.com" target="koffein.hu" />
-      <edge id="19" source="fogyasztoszer.com" target="adipex-regenon-reductil.com" />
-      <edge id="20" source="fogyasztoszer.com" target="vitalitis.info" />
-      <edge id="21" source="fogyasztoszer.com" target="adipex.ws" />
-      <edge id="22" source="fogyasztoszer.com" target="adipex-retard.net" />
-      <edge id="23" source="fogyasztoszer.com" target="adipexforum.hu" />
-      <edge id="24" source="fogyasztoszer.com" target="ecouponcamp.com" />
-      <edge id="25" source="fogyasztoszer.com" target="freewordpressthemes4u.com" />
-      <edge id="26" source="koksz.info" target="woocommerce.com" />
-      <edge id="27" source="koksz.info" target="hu.wordpress.org" />
-      <edge id="28" source="ivancsapatika.hu" target="flickr.com" />
-      <edge id="29" source="ivancsapatika.hu" target="fabbly.com" />
-      <edge id="30" source="ivancsapatika.hu" target="reliablecounter.com" />
+      <edge id="0" source="sziv.net" target="facebook.com" />
+      <edge id="1" source="sziv.net" target="otpbank.hu" />
+      <edge id="2" source="sziv.net" target="mkbklub.hu" />
+      <edge id="3" source="sziv.net" target="extremetracking.com" />
+      <edge id="4" source="sziv.net" target="plus.google.com" />
+      <edge id="5" source="sziv.net" target="statcounter.com" />
+      <edge id="6" source="sziv.net" target="mkb.hu" />
+      <edge id="7" source="kamillapatika.shoprenter.hu" target="kamillapatika.com" />
+      <edge id="8" source="kamillapatika.shoprenter.hu" target="ogyei.gov.hu" />
+      <edge id="9" source="kamillapatika.shoprenter.hu" target="bauschandlomb.hu" />
+      <edge id="10" source="kamillapatika.shoprenter.hu" target="facebook.com" />
+      <edge id="11" source="kamillapatika.shoprenter.hu" target="kamillapatika.cdn.shoprenter.hu" />
+      <edge id="12" source="adipex-retard.net" target="adipex-retard.net" />
+      <edge id="13" source="adipex-retard.net" target="statcounter.hu" />
+      <edge id="14" source="woocommerce.com" target="subtypestore.com" />
+      <edge id="15" source="woocommerce.com" target="facebook.com" />
+      <edge id="16" source="woocommerce.com" target="stripe.com" />
+      <edge id="17" source="woocommerce.com" target="woocommerce.com" />
+      <edge id="18" source="woocommerce.com" target="allblackshop.com" />
+      <edge id="19" source="woocommerce.com" target="docs.woocommerce.com" />
+      <edge id="20" source="woocommerce.com" target="luvd.com" />
+      <edge id="21" source="woocommerce.com" target="trends.builtwith.com" />
+      <edge id="22" source="woocommerce.com" target="feeds.feedburner.com" />
+      <edge id="23" source="woocommerce.com" target="twitter.com" />
+      <edge id="24" source="woocommerce.com" target="storefront.wordpress.com" />
+      <edge id="25" source="woocommerce.com" target="instagram.com" />
+      <edge id="26" source="woocommerce.com" target="pro4mance.com.au" />
+      <edge id="27" source="woocommerce.com" target="ideas.woocommerce.com" />
+      <edge id="28" source="woocommerce.com" target="striiiipes.com" />
+      <edge id="29" source="woocommerce.com" target="weber.co.za" />
+      <edge id="30" source="woocommerce.com" target="xeroshoes.com" />
+      <edge id="31" source="woocommerce.com" target="woocommerce.wordpress.com" />
+      <edge id="32" source="woocommerce.com" target="automattic.com" />
+      <edge id="33" source="woocommerce.com" target="zanerobe.com" />
+      <edge id="34" source="woocommerce.com" target="tokki.com.au" />
+      <edge id="35" source="woocommerce.com" target="botanikboutique.com.au" />
+      <edge id="36" source="pingvinpatika.hu" target="pingvinpatika.hu" />
+      <edge id="37" source="ivancsapatika.hu" target="reliablecounter.com" />
+      <edge id="38" source="ivancsapatika.hu" target="flickr.com" />
+      <edge id="39" source="ivancsapatika.hu" target="fabbly.com" />
+      <edge id="40" source="ivancsapatika.hu" target="d11bh4d8fhuq47.cloudfront.net" />
+      <edge id="41" source="ivancsapatika.hu" target="ivancsapatika.hu" />
+      <edge id="42" source="panaceaonlinepatika.hu" target="magnosolv.hu" />
+      <edge id="43" source="panaceaonlinepatika.hu" target="almapatika.hu" />
+      <edge id="44" source="panaceaonlinepatika.hu" target="naih.hu" />
+      <edge id="45" source="panaceaonlinepatika.hu" target="kreativvonalak.hu" />
+      <edge id="46" source="panaceaonlinepatika.hu" target="hungaropharma.hu" />
+      <edge id="47" source="panaceaonlinepatika.hu" target="ogyei.gov.hu" />
+      <edge id="48" source="panaceaonlinepatika.hu" target="panaceaonlinepatika.hu" />
+      <edge id="49" source="panaceaonlinepatika.hu" target="facebook.com" />
+      <edge id="50" source="panaceaonlinepatika.hu" target="medigen.hu" />
+      <edge id="51" source="statcounter.hu" target="facebook.com" />
+      <edge id="52" source="statcounter.hu" target="microsoft.com" />
+      <edge id="53" source="statcounter.hu" target="itunes.apple.com" />
+      <edge id="54" source="statcounter.hu" target="statcounter.com" />
+      <edge id="55" source="statcounter.hu" target="play.google.com" />
+      <edge id="56" source="statcounter.hu" target="techhero.com" />
+      <edge id="57" source="statcounter.hu" target="gs.statcounter.com" />
+      <edge id="58" source="statcounter.hu" target="api.statcounter.com" />
+      <edge id="59" source="statcounter.hu" target="blog.statcounter.com" />
+      <edge id="60" source="statcounter.hu" target="statcounter.hu" />
+      <edge id="61" source="statcounter.hu" target="forum.statcounter.com" />
+      <edge id="62" source="statcounter.hu" target="twitter.com" />
+      <edge id="63" source="edmedicinestore.com" target="corporate.indiamart.com" />
+      <edge id="64" source="edmedicinestore.com" target="linkedin.com" />
+      <edge id="65" source="edmedicinestore.com" target="m.edmedicinestore.com" />
+      <edge id="66" source="edmedicinestore.com" target="plus.google.com" />
+      <edge id="67" source="edmedicinestore.com" target="indiamart.com" />
+      <edge id="68" source="edmedicinestore.com" target="twitter.com" />
+      <edge id="69" source="edmedicinestore.com" target="facebook.com" />
+      <edge id="70" source="medigen.hu" target="play.google.com" />
+      <edge id="71" source="medigen.hu" target="youtube.com" />
+      <edge id="72" source="medigen.hu" target="itunes.apple.com" />
+      <edge id="73" source="medigen.hu" target="facebook.com" />
+      <edge id="74" source="medigen.hu" target="medigen.hu" />
+      <edge id="75" source="benu.hu" target="accounts.google.com" />
+      <edge id="76" source="benu.hu" target="ema.europa.eu" />
+      <edge id="77" source="benu.hu" target="facebook.com" />
+      <edge id="78" source="benu.hu" target="ogyei.gov.hu" />
+      <edge id="79" source="koksz.info" target="szteroid.com" />
+      <edge id="80" source="koksz.info" target="81" />
+      <edge id="81" source="koksz.info" target="koksz.hu" />
+      <edge id="82" source="koksz.info" target="hu.wordpress.org" />
+      <edge id="83" source="koksz.info" target="fuchstibi" />
+      <edge id="84" source="koksz.info" target="woocommerce.com" />
+      <edge id="85" source="koksz.info" target="en.wikipedia.org" />
+      <edge id="86" source="koksz.info" target="Lófasz" />
+      <edge id="87" source="koksz.info" target="szteroidforum.com" />
+      <edge id="88" source="koksz.info" target="podpinka" />
+      <edge id="89" source="koksz.info" target="jan.11-re%20szeretnem%20megkapni" />
+      <edge id="90" source="koksz.info" target="DUNAKESZI%202120%20BARÁTSÁG%20ÚT%2020%207.EM%2045" />
+      <edge id="91" source="viagrapatika.com" target="viagrapatika.com" />
+      <edge id="92" source="viagrapatika.com" target="ssl-checkout-page.com" />
+      <edge id="93" source="adipex-regenon-reductil.com" target="adipex-regenon-reductil.com" />
+      <edge id="94" source="adipex-regenon-reductil.com" target="wphu.org" />
+      <edge id="95" source="kamillapatika.com" target="facebook.com" />
+      <edge id="96" source="kamillapatika.com" target="shoprenter.hu" />
+      <edge id="97" source="kamillapatika.com" target="disqus.com" />
+      <edge id="98" source="kamillapatika.com" target="kamillapatika.cdn.shoprenter.hu" />
+      <edge id="99" source="kamillapatika.com" target="videoklinika.hu" />
+      <edge id="100" source="kamillapatika.com" target="femina.hu" />
+      <edge id="101" source="kamillapatika.com" target="ogyei.gov.hu" />
+      <edge id="102" source="kamillapatika.com" target="nivea.hu" />
+      <edge id="103" source="kamillapatika.com" target="kamillapatika.shoprenter.hu" />
+      <edge id="104" source="kamillapatika.com" target="youtube.com" />
+      <edge id="105" source="kamillapatika.com" target="nfh.hu" />
+      <edge id="106" source="kamillapatika.com" target="bauschandlomb.hu" />
+      <edge id="107" source="kamagra-zsele.hu" target="kamagra-zsele.hu" />
+      <edge id="108" source="kamagra-zsele.hu" target="statcounter.hu" />
+      <edge id="109" source="patika24.hu" target="ogyei.gov.hu" />
+      <edge id="110" source="patika24.hu" target="facebook.com" />
+      <edge id="111" source="levitraforum.hu" target="viagraforum.hu" />
+      <edge id="112" source="levitraforum.hu" target="levitraforum.hu" />
+      <edge id="113" source="levitraforum.hu" target="cialisforum.hu" />
+      <edge id="114" source="levitraforum.hu" target="statcounter.com" />
+      <edge id="115" source="levitraforum.hu" target="kamagraforum.hu" />
+      <edge id="116" source="viagrarendeles.org" target="kamagrashop.hu" />
+      <edge id="117" source="viagrarendeles.org" target="szexpartner.info.hu" />
+      <edge id="118" source="viagrarendeles.org" target="l" />
+      <edge id="119" source="viagrarendeles.org" target="viagrarendeles.org" />
+      <edge id="120" source="viagrarendeles.org" target="cialis-cialis.org" />
+      <edge id="121" source="viagrarendeles.org" target="statcounter.hu" />
+      <edge id="122" source="hu.wordpress.org" target="buddypress.org" />
+      <edge id="123" source="hu.wordpress.org" target="make.wordpress.org" />
+      <edge id="124" source="hu.wordpress.org" target="bbpress.org" />
+      <edge id="125" source="hu.wordpress.org" target="wordpress.com" />
+      <edge id="126" source="hu.wordpress.org" target="central.wordcamp.org" />
+      <edge id="127" source="hu.wordpress.org" target="developer.wordpress.org" />
+      <edge id="128" source="hu.wordpress.org" target="ma.tt" />
+      <edge id="129" source="hu.wordpress.org" target="kozosseg.wphu.org" />
+      <edge id="130" source="hu.wordpress.org" target="wphu.org" />
+      <edge id="131" source="hu.wordpress.org" target="learn.wordpress.org" />
+      <edge id="132" source="hu.wordpress.org" target="wordpress.org" />
+      <edge id="133" source="hu.wordpress.org" target="wordpress.tv" />
+      <edge id="134" source="hu.wordpress.org" target="wordpressfoundation.org" />
+      <edge id="135" source="plus.google.com" target="accounts.google.com" />
+      <edge id="136" source="plus.google.com" target="google.com" />
+      <edge id="137" source="corporate.indiamart.com" target="facebook.com" />
+      <edge id="138" source="corporate.indiamart.com" target="windowsphone.com" />
+      <edge id="139" source="corporate.indiamart.com" target="itunes.apple.com" />
+      <edge id="140" source="corporate.indiamart.com" target="plus.google.com" />
+      <edge id="141" source="corporate.indiamart.com" target="wordpress.com" />
+      <edge id="142" source="corporate.indiamart.com" target="indiamart.com" />
+      <edge id="143" source="corporate.indiamart.com" target="corporateindiamart.wordpress.com" />
+      <edge id="144" source="corporate.indiamart.com" target="play.google.com" />
+      <edge id="145" source="corporate.indiamart.com" target="themakersofindia.com" />
+      <edge id="146" source="corporate.indiamart.com" target="careers.indiamart.com" />
+      <edge id="147" source="corporate.indiamart.com" target="youtube.com" />
+      <edge id="148" source="corporate.indiamart.com" target="twitter.com" />
+      <edge id="149" source="corporate.indiamart.com" target="m.indiamart.com" />
+      <edge id="150" source="corporate.indiamart.com" target="help.indiamart.com" />
+      <edge id="151" source="viagra-rendeles.net" target="kamagrashop.hu" />
+      <edge id="152" source="viagra-rendeles.net" target="budapesterotika.hu" />
+      <edge id="153" source="viagra-rendeles.net" target="vitalitis.info" />
+      <edge id="154" source="viagra-rendeles.net" target="dragon-power.biz" />
+      <edge id="155" source="viagra-rendeles.net" target="viagra-rendeles.net" />
+      <edge id="156" source="viagra-rendeles.net" target="statcounter.hu" />
+      <edge id="157" source="hungaropharma.hu" target="almapatika.com" />
+      <edge id="158" source="hungaropharma.hu" target="hph.hu" />
+      <edge id="159" source="hungaropharma.hu" target="praxisplatform.hu" />
+      <edge id="160" source="hungaropharma.hu" target="gyongypatikak.hu" />
+      <edge id="161" source="hungaropharma.hu" target="php-gynsz.hu" />
+      <edge id="162" source="kreativvonalak.hu" target="behance.net" />
+      <edge id="163" source="kreativvonalak.hu" target="facebook.com" />
+      <edge id="164" source="kreativvonalak.hu" target="plus.google.com" />
+      <edge id="165" source="koffein.hu" target="koffein.hu" />
+      <edge id="166" source="koffein.hu" target="auth.mailservice.com" />
+      <edge id="167" source="koffein.hu" target="mailservice.com" />
+      <edge id="168" source="patika.net" target="ogyei.gov.hu" />
+      <edge id="169" source="patika.net" target="nyitaselott.gyogyszer.info" />
+      <edge id="170" source="reliablecounter.com" target="dronecamera.org" />
+      <edge id="171" source="reliablecounter.com" target="myavreceiver.com" />
+      <edge id="172" source="reliablecounter.com" target="fitness-trackers.org" />
+      <edge id="173" source="reliablecounter.com" target="projectorlive.com" />
+      <edge id="174" source="fabbly.com" target="fabberforum.com" />
+      <edge id="175" source="adipexforum.hu" target="adipexforum.hu" />
+      <edge id="176" source="adipexforum.hu" target="twitter.com" />
+      <edge id="177" source="adipexforum.hu" target="statcounter.com" />
+      <edge id="178" source="reductilrendeles.com" target="hvg.hu" />
+      <edge id="179" source="reductilrendeles.com" target="adipex.ws" />
+      <edge id="180" source="reductilrendeles.com" target="reductilrendeles.com" />
+      <edge id="181" source="reductilrendeles.com" target="anorexia.lap.hu" />
+      <edge id="182" source="reductilrendeles.com" target="reductil-zenslim.com" />
+      <edge id="183" source="reductilrendeles.com" target="statcounter.hu" />
+      <edge id="184" source="fogyasztoszer.com" target="levitraforum.hu" />
+      <edge id="185" source="fogyasztoszer.com" target="sziv.net" />
+      <edge id="186" source="fogyasztoszer.com" target="vitalitis.info" />
+      <edge id="187" source="fogyasztoszer.com" target="adipex.ws" />
+      <edge id="188" source="fogyasztoszer.com" target="adipex-retard.net" />
+      <edge id="189" source="fogyasztoszer.com" target="adipex-regenon-reductil.com" />
+      <edge id="190" source="fogyasztoszer.com" target="index.hu" />
+      <edge id="191" source="fogyasztoszer.com" target="ecouponcamp.com" />
+      <edge id="192" source="fogyasztoszer.com" target="kamagra-zsele.hu" />
+      <edge id="193" source="fogyasztoszer.com" target="freewordpressthemes4u.com" />
+      <edge id="194" source="fogyasztoszer.com" target="kamagraforum.hu" />
+      <edge id="195" source="fogyasztoszer.com" target="viagraforum.hu" />
+      <edge id="196" source="fogyasztoszer.com" target="adipexforum.hu" />
+      <edge id="197" source="fogyasztoszer.com" target="koffein.hu" />
+      <edge id="198" source="fogyasztoszer.com" target="fogyasztoszer.com" />
+      <edge id="199" source="fogyasztoszer.com" target="cialisforum.hu" />
+      <edge id="200" source="fogyasztoszer.com" target="statcounter.hu" />
+      <edge id="201" source="m.edmedicinestore.com" target="indiamart.com" />
+      <edge id="202" source="m.edmedicinestore.com" target="edmedicinestore.com" />
+      <edge id="203" source="ogyei.gov.hu" target="eur-lex.europa.eu" />
+      <edge id="204" source="ogyei.gov.hu" target="ec.europa.eu" />
+      <edge id="205" source="ogyei.gov.hu" target="akaciapatika.hu" />
+      <edge id="206" source="kamagraforum.hu" target="viagraforum.hu" />
+      <edge id="207" source="kamagraforum.hu" target="levitraforum.hu" />
+      <edge id="208" source="kamagraforum.hu" target="cialisforum.hu" />
+      <edge id="209" source="kamagraforum.hu" target="statcounter.com" />
+      <edge id="210" source="kamagraforum.hu" target="kamagraforum.hu" />
+      <edge id="211" source="viagraforum.hu" target="viagraforum.hu" />
+      <edge id="212" source="viagraforum.hu" target="levitraforum.hu" />
+      <edge id="213" source="viagraforum.hu" target="cialisforum.hu" />
+      <edge id="214" source="viagraforum.hu" target="statcounter.com" />
+      <edge id="215" source="viagraforum.hu" target="kamagraforum.hu" />
+      <edge id="216" source="indiamart.com" target="facebook.com" />
+      <edge id="217" source="indiamart.com" target="trade.indiamart.com" />
+      <edge id="218" source="indiamart.com" target="itunes.apple.com" />
+      <edge id="219" source="indiamart.com" target="plus.google.com" />
+      <edge id="220" source="indiamart.com" target="play.google.com" />
+      <edge id="221" source="indiamart.com" target="corporate.indiamart.com" />
+      <edge id="222" source="indiamart.com" target="walplast.co.in" />
+      <edge id="223" source="indiamart.com" target="dir.indiamart.com" />
+      <edge id="224" source="indiamart.com" target="my.indiamart.com" />
+      <edge id="225" source="indiamart.com" target="seller.indiamart.com" />
+      <edge id="226" source="indiamart.com" target="twitter.com" />
+      <edge id="227" source="indiamart.com" target="m.indiamart.com" />
+      <edge id="228" source="indiamart.com" target="help.indiamart.com" />
+      <edge id="229" source="indiamart.com" target="10times.com" />
+      <edge id="230" source="facebook.com" target="l.facebook.com" />
+      <edge id="231" source="budapesterotika.hu" target="facebook.com" />
+      <edge id="232" source="budapesterotika.hu" target="domainflotta.hu" />
+      <edge id="233" source="sipo.hu" target="arukereso.hu" />
+      <edge id="234" source="sipo.hu" target="hirlevel.sipopatikak.hu" />
+      <edge id="235" source="sipo.hu" target="sipo.hu" />
+      <edge id="236" source="sipo.hu" target="Nuxellence® DETOX" />
+      <edge id="237" source="sipo.hu" target="sipo.shoprenter.hu" />
+      <edge id="238" source="sipo.hu" target="argep.hu" />
+      <edge id="239" source="index.hu" target="joautok.hu" />
+      <edge id="240" source="index.hu" target="facebook.com" />
+      <edge id="241" source="index.hu" target="allas.hu" />
+      <edge id="242" source="index.hu" target="szevasztok.blog.hu" />
+      <edge id="243" source="index.hu" target="blog.hu" />
+      <edge id="244" source="index.hu" target="indafoto.hu" />
+      <edge id="245" source="index.hu" target="index.hu" />
+      <edge id="246" source="index.hu" target="port.hu" />
+      <edge id="247" source="index.hu" target="erotika.indavideo.hu" />
+      <edge id="248" source="index.hu" target="ad.adverticum.net" />
+      <edge id="249" source="index.hu" target="femina.hu" />
+      <edge id="250" source="index.hu" target="indamail.hu" />
+      <edge id="251" source="index.hu" target="portfolio.hu" />
+      <edge id="252" source="index.hu" target="dex.hu" />
+      <edge id="253" source="index.hu" target="divany.hu" />
+      <edge id="254" source="index.hu" target="iplocation.net" />
+      <edge id="255" source="index.hu" target="instagram.com" />
+      <edge id="256" source="index.hu" target="talkabot.net" />
+      <edge id="257" source="index.hu" target="napi.hu" />
+      <edge id="258" source="index.hu" target="plus.google.com" />
+      <edge id="259" source="index.hu" target="totalcar.hu" />
+      <edge id="260" source="index.hu" target="jobinfo.hu" />
+      <edge id="261" source="index.hu" target="chats.viber.com" />
+      <edge id="262" source="index.hu" target="twitter.com" />
+      <edge id="263" source="index.hu" target="besocial.hu" />
+      <edge id="264" source="index.hu" target="forum.index.hu" />
+      <edge id="265" source="index.hu" target="messenger.com" />
+      <edge id="266" source="index.hu" target="velvet.hu" />
+      <edge id="267" source="index.hu" target="otthonterkep.hu" />
+      <edge id="268" source="index.hu" target="indavideo.hu" />
+      <edge id="269" source="almapatika.hu" target="almapatika.com" />
+      <edge id="270" source="almapatika.hu" target="facebook.com" />
+      <edge id="271" source="almapatika.hu" target="almaokosveny.hu" />
+      <edge id="272" source="adipex.ws" target="adipex.ws" />
+      <edge id="273" source="adipex.ws" target="twitter.com" />
+      <edge id="274" source="cialisforum.hu" target="viagraforum.hu" />
+      <edge id="275" source="cialisforum.hu" target="levitraforum.hu" />
+      <edge id="276" source="cialisforum.hu" target="cialisforum.hu" />
+      <edge id="277" source="cialisforum.hu" target="statcounter.com" />
+      <edge id="278" source="cialisforum.hu" target="kamagraforum.hu" />
     </edges>
   </graph>
 </gexf>

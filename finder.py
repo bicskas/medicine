@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-
+import datetime
+import sys
 from bs4 import BeautifulSoup
 import database
 import urllib.request
@@ -72,7 +73,9 @@ def getParse(baseurl):
     # parse html
     parse = BeautifulSoup(html_page, 'lxml')
     global oldalszam
-    print('Site downloaded: ' + url + ' Downloaded sites: ' + str(oldalszam))
+    #print('Site downloaded: ' + url + ' Downloaded sites: ' + str(oldalszam))
+    sys.stdout.write('\rDownloaded sites: ' + str(oldalszam) + ' Time: ' + str(datetime.datetime.now().time()))
+    sys.stdout.flush()
     oldalszam += 1
     return parse
 
@@ -134,11 +137,11 @@ def kiir(sublinks):
 
 
 # -----------------------------------------------------------------------------
+print('Start at: ' + str(datetime.datetime.now().time()))
 urlfile = open("urls.txt","r")
 lines = '{' + clearSource(urlfile.read()) + '}'
 starturls = ast.literal_eval(lines)
 urlfile.close()
-
 
 
 melyseg = 4
@@ -155,15 +158,19 @@ for url, type in starturls.items():
     database.setBaseNode(getName(baseurl))
     # removeFromQueue(0, baseurl)
     kiir(getURL(page))
-print(queue)
+
 i = 1
 while i < melyseg:
+    sys.stdout.write('\rLevel: ' + str(i) + ' Time: ' + str(datetime.datetime.now().time()))
+    sys.stdout.flush()
     for q in queue[i]:
         tinyName = urlparse(q).netloc + urlparse(q).path
 
         if not q in visited and not tinydbtest.inVisited(tinyName):
             setBaseUrl(q)
             database.setBaseNode(getName(q))
+            sys.stdout.write('\rActual element: ' + tinyName + ' Time: ' + str(datetime.datetime.now().time()))
+            sys.stdout.flush()
             # removeFromQueue(getSzint(level, q), q)
             try:
                 page = getParse(baseurl)

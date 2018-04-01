@@ -77,5 +77,6 @@ def getNodes():
 
 
 def getEdges():
-    edges = graph.data("MATCH (s:Site)-[r:LINK]->(n:Site) WHERE EXISTS(s.ntype) RETURN s.name, n.name")
+    #edges = graph.data("MATCH (s:Site)-[r:LINK]->(n:Site) WHERE EXISTS(s.ntype) RETURN s.name, n.name")
+    edges = graph.data("MATCH (s:Site)-[r:LINK]->(n:Site) RETURN s.name, n.name")
     return edges
