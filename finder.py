@@ -2,6 +2,7 @@
 import datetime
 import sys
 from bs4 import BeautifulSoup
+
 import database
 import urllib.request
 from urllib.parse import urljoin
@@ -67,9 +68,12 @@ def getParse(baseurl):
     tinydbtest.addToVisited(url)
     tinydbtest.updateTinySite(url)
     try:
-        html_page = urllib.request.urlopen(url)
+        sys.stdout.write('\rOpening... Time: ' + str(datetime.datetime.now().time()))
+        sys.stdout.flush()
+        html_page = urllib.request.urlopen(url, timeout = 5)
     except:
         html_page = ''
+
     # parse html
     parse = BeautifulSoup(html_page, 'lxml')
     global oldalszam
